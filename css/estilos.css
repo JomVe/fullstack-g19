@@ -19,6 +19,15 @@ div {
   margin: 0;
 }
 
+/*logo con animación >>>>*/
+.logo_animado {
+  display: inline-block;
+  margin: 0 0.5rem;
+  animation: bounce;
+  animation-duration: 3s;
+}
+/*<<<< logo con animación*/
+
 /*header con logo y menú >>>>*/
 .header-menu {
   background: #000000;
@@ -49,7 +58,7 @@ div {
   display: flex;
   flex-grow: 1;
   text-align: center;
-  font-size: 70%;
+  font-size: 60%;
 }
 .txt-nav a {
   display: block;
