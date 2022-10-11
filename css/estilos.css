@@ -104,12 +104,28 @@ li a:hover {
   padding: 0%;
   padding-top: 10%;
   margin: 0%;
+  margin-left: 2%;
   vertical-align: bottom;
   opacity: 0;
 }
 .textoindex:hover {
   opacity: 1;
 }
+
+
+ /*Gradiente de color en las secciones del index >>>>*/
+ #cf{
+  background-image: linear-gradient(to right, #b1210b 0%, #f9d423 100%);
+}
+#vo{
+  background-image: linear-gradient(to right, #21177a 0%, #2cacd1 100%);
+}
+#or{
+  background-image: linear-gradient(to right, #96cd16 0%, #00eaff 100%);
+}
+/*<<<< Gradiente de color en las secciones del index*/
+
+
 /*<<<< Texto al pasar mouse sobre secciones index*/
 
 /*grid body index >>>>*/
@@ -141,18 +157,21 @@ li a:hover {
   background-color: rgb(36, 68, 183);
   border-radius: 10px;
   grid-area: vol;
+  text-align: center;
 }
 
 .s2 {
   background-color: rgb(37, 165, 73);
   border-radius: 10px;
   grid-area: ong;
+  text-align: center;
 }
 
 .s3 {
   background-color: rgb(232, 106, 28);
   border-radius: 10px;
   grid-area: cf;
+  text-align: center;
 }
 
 @media screen and (max-width: 640px) {
@@ -177,5 +196,4 @@ li a:hover {
   height: 10rem;
   font-size: 45%;  
 }
-
 /*<<<< footer*/
