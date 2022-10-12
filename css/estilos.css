@@ -19,15 +19,6 @@ div {
   margin: 0;
 }
 
-/*logo con animación >>>>*/
-.logo_animado {
-  display: inline-block;
-  margin: 0 0.5rem;
-  animation: bounce;
-  animation-duration: 3s;
-}
-/*<<<< logo con animación*/
-
 /*header con logo y menú >>>>*/
 .header-menu {
   background: #000000;
@@ -58,7 +49,7 @@ div {
   display: flex;
   flex-grow: 1;
   text-align: center;
-  font-size: 60%;
+  font-size: 70%;
 }
 .txt-nav a {
   display: block;
@@ -155,6 +146,7 @@ li a:hover {
   grid-area: cf;
 }
 
+
 @media screen and (max-width: 640px) {
   .container {
     grid-template-areas:
@@ -166,16 +158,106 @@ li a:hover {
 /*<<<< grid body index*/
 
 /*footer >>>>*/
-.footer {
-  width: 100%;
-  display:flex;
-  flex-wrap: wrap;
-  justify-content:space-around;
+@media screen and (max-width: 1400px) {.footer {
   background-color: black;
-  color: #f2f2f2;
+  color: whitesmoke;
   border-radius: 10px;
-  height: 10rem;
-  font-size: 45%;  
+  height: 14rem;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+
+  overflow: hidden;
+
+  
+}
+}
+div ul {
+  margin: 0;
+  padding: 0;
+}
+.info li {
+  position: relative;
+  left: 10px;
+  top: -95px;
+  bottom: 0px;
+  text-decoration: none;
+  list-style: none;
+  font-size: 18px;
+  display: display-box;
+  margin: 0;
+  padding: 0;
 }
 
+h2 {
+  position: relative;
+  text-align: center;
+  top: -25px;
+  bottom: 5%;
+  font-size: 25px;
+  
+}
+
+.logomini {
+  position: relative;
+  left: 35px;
+  top: 10px;
+  font-size: 25px;
+}
+div span {
+  position: relative;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.social {
+  position: relative;
+  justify-content: center;
+  align-content: space-between;
+  text-align: center;
+  bottom: 60px;
+  font-size: 25px;
+}
+
+div p {
+  position: relative;
+  text-align: center;
+  top: 0px;
+  bottom: auto;
+  font-size: 15px;
+}
+
+div i {
+  position: relative;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-content: space-around;
+}
+
+div h1 {
+  position: relative;
+  top: -95px;
+  bottom: 0%;
+  left: 10%;
+  font-size: 1rem;
+}
 /*<<<< footer*/
+
+/*form >>>>*/
+
+
+.col-md-4 {
+  position: relative;
+  left: 7%;
+
+}
+
+.footer h2 {font-size: 15px;}
+
+
+.card-body h5 {text-align: center;
+font-size: 25px;}
+
+
+/*form >>>>*/
