@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 2em;
+  max-width: 100%;
+  color: #000000;
+}
+
+h3 {
+  text-align: center;
+}
+
+div {
+  margin: 0;
+}
+
+/*header con logo y menú >>>>*/
+.header-menu {
+  background: #000000;
+  opacity: 90%;
+  height: 100px;
+  width: 100%;
+  border-radius: 10px;
+  position: fixed;
+  z-index: 100;
+  margin: auto;
+  overflow: hidden;
+}
+.logo-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  float: left;
+}
+.txt-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  list-style: none;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.txt-nav ul li {
+  display: flex;
+  flex-grow: 1;
+  text-align: center;
+  font-size: 70%;
+}
+.txt-nav a {
+  display: block;
+  padding: 5px;
+  color: white;
+  text-decoration: none;
+}
+li a:hover {
+  color: #b6b6b6;
+}
+.logo-nav div img {
+  padding-bottom: 15px;
+  align-items: center;
+}
+
+@media screen and (min-width: 640px) {
+  .logo-nav {
+    display: flex;
+    margin-left: 1em;
+    flex-wrap: nowrap;
+  }
+  .txt-nav {
+    align-self: center;
+    margin: 0 0.8em 0 0;
+  }
+  .txt-nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: flex-end;
+  }
+}
+/*<<<<< header con logo y menú*/
+
+/*Texto al pasar mouse sobre secciones index >>>>*/
+.textoindex {
+  display: inline-block;
+  position: absolute;
+  overflow: hidden;
+  width: 90%;
+  font-size: 60%;
+  padding: 0%;
+  padding-top: 10%;
+  margin: 0%;
+  vertical-align: bottom;
+  opacity: 0;
+}
+.textoindex:hover {
+  opacity: 1;
+}
+/*<<<< Texto al pasar mouse sobre secciones index*/
+
+/*grid body index >>>>*/
+.container {
+  grid-template-columns: repeat(12, 1fr);
+  padding: 1rem;
+  padding-top: 130px;
+  height: 50rem;
+  display: grid;
+  grid-template-areas:
+    "vol vol vol vol vol vol vol vol cf cf cf cf"
+    "vol vol vol vol vol vol vol vol cf cf cf cf"
+    "ong ong ong ong ong ong ong ong cf cf cf cf"
+    "ong ong ong ong ong ong ong ong cf cf cf cf";
+  border: 1px solid black;
+  gap: 0.8rem;
+  font-size: 100%;
+  border-radius: 10px;
+}
+
+.container div {
+  text-align: center;
+  position: relative;
+  top: 20%;
+  transform: translateY(-50%);
+}
+
+.s1 {
+  background-color: rgb(36, 68, 183);
+  border-radius: 10px;
+  grid-area: vol;
+}
+
+.s2 {
+  background-color: rgb(37, 165, 73);
+  border-radius: 10px;
+  grid-area: ong;
+}
+
+.s3 {
+  background-color: rgb(232, 106, 28);
+  border-radius: 10px;
+  grid-area: cf;
+}
+
+
+@media screen and (max-width: 640px) {
+  .container {
+    grid-template-areas:
+      "cf  cf  cf  cf  cf  cf  cf  cf  cf  cf  cf  cf"
+      "vol vol vol vol vol vol vol vol vol vol vol vol"
+      "ong ong ong ong ong ong ong ong ong ong ong ong";
+  }
+}
+/*<<<< grid body index*/
+
+/*footer >>>>*/
+@media screen and (max-width: 1400px) {.footer {
+  background-color: black;
+  color: whitesmoke;
+  border-radius: 10px;
+  height: 14rem;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+
+  overflow: hidden;
+
+  
+}
+}
+div ul {
+  margin: 0;
+  padding: 0;
+}
+.info li {
+  position: relative;
+  left: 10px;
+  top: -95px;
+  bottom: 0px;
+  text-decoration: none;
+  list-style: none;
+  font-size: 18px;
+  display: display-box;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  position: relative;
+  text-align: center;
+  top: -25px;
+  bottom: 5%;
+  font-size: 25px;
+  
+}
+
+.logomini {
+  position: relative;
+  left: 35px;
+  top: 10px;
+  font-size: 25px;
+}
+div span {
+  position: relative;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.social {
+  position: relative;
+  justify-content: center;
+  align-content: space-between;
+  text-align: center;
+  bottom: 60px;
+  font-size: 25px;
+}
+
+div p {
+  position: relative;
+  text-align: center;
+  top: 0px;
+  bottom: auto;
+  font-size: 15px;
+}
+
+div i {
+  position: relative;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-content: space-around;
+}
+
+div h1 {
+  position: relative;
+  top: -95px;
+  bottom: 0%;
+  left: 10%;
+  font-size: 1rem;
+}
+/*<<<< footer*/
+
+/*form >>>>*/
+
+
+.col-md-4 {
+  position: relative;
+  left: 7%;
+
+}
+
+.footer h2 {font-size: 15px;}
+
+
+.card-body h5 {text-align: center;
+font-size: 25px;}
+
+
+/*form >>>>*/
