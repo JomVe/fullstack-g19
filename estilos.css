@@ -1,0 +1,413 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  min-height: 100%;
+}
+
+body {  
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.7em;  
+  color: #000000;
+}
+
+/* h3 {
+  text-align: center;    
+} */
+
+div {
+  margin: 0;
+}
+
+/*logo con animación >>>>*/
+.logo_animado {
+  display: inline-block;
+  margin: 0 0.5rem;
+  animation: bounce;
+  animation-duration: 3s;
+}
+/*<<<< logo con animación*/
+
+/*header con logo y menú >>>>*/
+.header-menu {
+  background: #000000;
+  opacity: 90%;
+  height: auto;
+  width: 100%;
+  border-radius: 10px;
+  position: fixed;
+  z-index: 100;
+  margin: auto;
+  overflow: hidden;
+}
+.logo-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  float: left;
+  font-size: 100%;
+}
+.txt-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  list-style: none;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.txt-nav ul li {
+  display: flex;
+  flex-grow: 1;
+  text-align: center;
+  font-size: 60%;
+}
+.txt-nav a {
+  display: block;
+  padding: 5px;
+  color: white;
+  text-decoration: none;
+}
+.txt-nav li a:hover {
+  color: #b6b6b6;
+}
+.logo-nav div img {
+  padding-bottom: 15px;
+  align-items: center;
+}
+
+@media screen and (min-width: 640px) {
+  .logo-nav {
+    display: flex;
+    margin-left: 1em;
+    flex-wrap: nowrap;
+    height: auto;
+  }
+  .txt-nav {
+    align-self: center;
+    margin: 0 0.8em 0 0;
+  }
+  .txt-nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: flex-end;
+  }
+}
+/*<<<<< header con logo y menú*/
+
+/*Texto al pasar mouse sobre secciones index >>>>*/
+.textoindex {
+  display: inline-block;
+  position: absolute;
+  overflow: hidden;
+  width: 90%;
+  font-size: 60%;
+  padding: 0%;
+  padding-top: 10%;
+  margin: 0%;
+  margin-left: 2%;
+  vertical-align: bottom;
+  opacity: 0;
+}
+
+
+.textoindex:hover { opacity: 1;}
+
+.textoindex2 {
+  display: inline-block;
+  position: absolute;
+  overflow: hidden;
+  margin-top: 20%;
+}
+
+
+/*<<<< Texto al pasar mouse sobre secciones index*/
+
+
+/*Gradiente de color en las secciones del index >>>>*/
+ #cf{
+  background-image: linear-gradient(to right, #b1210b 0%, #f9d423 100%);
+}
+#vo{
+  background-image: linear-gradient(to right, #21177a 0%, #2cacd1 100%);
+}
+#or{
+  background-image: linear-gradient(to right, #96cd16 0%, #00eaff 100%);
+}
+/*<<<< Gradiente de color en las secciones del index*/
+
+
+
+/*grid body index >>>>*/
+.container {
+  grid-template-columns: repeat(12, 1fr);
+  padding: 1rem;
+  padding-top: 130px;
+  height: auto;
+  display: grid;
+  grid-template-areas:
+    "vol vol vol vol vol vol vol vol cf cf cf cf"
+    "vol vol vol vol vol vol vol vol cf cf cf cf"
+    "ong ong ong ong ong ong ong ong cf cf cf cf"
+    "ong ong ong ong ong ong ong ong cf cf cf cf";
+  border: 1px solid black;
+  gap: 0.5rem;
+  font-size: 100%;
+  border-radius: 10px;
+}
+
+
+
+.container div {
+  text-align: center;
+  position: relative;
+  top: 20%;
+  transform: translateY(-50%);
+}
+
+.container h3 {
+  font-size: 100%;
+  text-align: center;
+  margin-top: 5%;
+}
+.container a {
+  text-decoration: none;
+  color: #000000;  
+}
+.container2 {
+  padding: 0.2rem;
+  padding-top: 130px;
+  height: 100rem;
+  width: 100%;
+  display: grid;
+  font-size: 100%;
+  border-radius: 15px;
+}
+.container2 div {
+  text-align: center;
+  position: relative;
+  top: 0%;
+  transform: translateY(-50%);
+
+}
+
+.container2 h3 {
+  font-size: 100%;
+  text-align: center; margin-top: 3%;
+}
+.container2 a {
+  text-decoration: none;
+  color: #000000;  
+}
+.ONG {
+  border-radius: 10px;
+  text-align: center;}
+
+.voluntarios { 
+    border-radius: 10px;
+    text-align: center;}
+
+.funciona { 
+      border-radius: 10px;
+      text-align: center;}
+
+a:hover { opacity: 70%;}
+
+
+/* .container a:hover{
+  color:#b6b6b6;
+} */
+
+.s1 {
+  background-color: rgb(36, 68, 183);
+  border-radius: 10px;
+  grid-area: vol;
+  text-align: center;
+}
+
+.s2 {
+  background-color: rgb(37, 165, 73);
+  border-radius: 10px;
+  grid-area: ong;
+  text-align: center;
+}
+
+
+.s3 {
+  background-color: rgb(232, 106, 28);
+  border-radius: 10px;
+  grid-area: cf;
+  text-align: center;
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    grid-template-areas:
+      "cf  cf  cf  cf  cf  cf  cf  cf  cf  cf  cf  cf"
+      "vol vol vol vol vol vol vol vol vol vol vol vol"
+      "ong ong ong ong ong ong ong ong ong ong ong ong";
+  }
+}
+/*<<<< grid body index*/
+
+
+/*footer >>>>*/
+@media screen and (max-width: 640px) {footer {
+  background-color: black;
+  color: whitesmoke;
+  border-radius: 10px;
+  height: auto;
+  position:absolute;
+  bottom: 0;
+  left: 0%;
+  right: 0%;
+  overflow: hidden;
+  
+}
+}
+
+footer{
+  background-color: black;
+  color: whitesmoke;
+  border-radius: 10px;
+  height: auto;
+  position:relative;
+  left: 0%;
+  right: 0%;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+footer div ul {
+  margin: 0;
+  padding: 0;
+}
+.info li {
+  position: relative;
+  left: 10px;
+  top: -95px;
+  bottom: 0px;
+  text-decoration: none;
+  list-style: none;
+  font-size: 18px;
+  display: display-box;
+  margin: 0;
+  padding: 0;
+}
+
+footer a {
+  text-decoration: none;
+  color:white;  
+}
+footer a:hover {
+  color: #b6b6b6;
+}
+
+footer h2 {
+  position: relative;
+  text-align: center;
+  top: -25px;
+  bottom: 5%;
+  font-size: 15px;  
+}
+
+.logomini {
+  position: relative;
+  left: 35px;
+  top: 10px;
+  font-size: 25px;
+}
+/* div span {
+  position: relative;
+  justify-content: center;
+  font-size: 1.2rem;
+} */
+
+.social {
+  position: relative;
+  justify-content: center;
+  align-content: space-between;
+  text-align: center;
+  bottom: 60px;
+  font-size: 25px;
+}
+
+footer div p {
+  position: relative;
+  text-align: center;
+  top: 0px;
+  bottom: auto;
+  font-size: 15px;
+}
+
+footer div i {
+  position: relative;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-content: space-around;
+}
+
+footer div h1 {
+  position: relative;
+  top: -95px;
+  bottom: 0%;
+  left: 10%;
+  font-size: 1rem;
+}
+/*<<<< footer*/
+
+/*form >>>>*/
+/* form {
+  
+      
+} */
+
+.col-md-4 {
+  position: relative;
+  left: 7%;
+}
+
+/* .card-body h5 {text-align: center;
+font-size: 25px;} */
+/*<<<< form*/
+
+
+
+/* agregado 11/10/22 */
+.divform{
+  display: flex;
+  flex-direction: column; }
+  
+.card-body h5 {text-align: center;
+    font-size: 25px;}
+
+.card-body p {text-align: center; }
+
+
+/* input{
+  width: 100px;
+} */
+
+
+
+
+
+/* footer >>>>*/
+/* .footer {
+  width: 100%;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  background-color: black;
+  color: #f2f2f2;
+  border-radius: 10px;
+  height: 10rem;
+  font-size: 45%;  
+} */
+/*<<<< footer */
