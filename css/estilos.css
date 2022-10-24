@@ -6,17 +6,18 @@
 
 html{
   min-height: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-body {  
+body {    
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 1.7em;  
   color: #000000;
+  height: 100%;
+  
 }
-
-/* h3 {
-  text-align: center;    
-} */
 
 div {
   margin: 0;
@@ -44,11 +45,17 @@ div {
   overflow: hidden;
 }
 .logo-nav {
+  margin-left: 0%;
   display: flex;
   align-items: center;
   justify-content: space-around;
   float: left;
   font-size: 100%;
+  width: 100%;
+}
+.txt-nav{
+  width: 100%;
+  margin-right: 0;
 }
 .txt-nav ul {
   display: flex;
@@ -78,7 +85,27 @@ div {
   align-items: center;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 576px) {
+  .logo-nav {
+    display: flex;
+    margin-left: 1em;
+    flex-wrap: nowrap;
+    height: auto;
+  }
+  .txt-nav {
+    align-self: center;
+    margin: 0 0.8em 0 0;
+  }
+  .txt-nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .logo-nav {
     display: flex;
     margin-left: 1em;
@@ -107,7 +134,7 @@ div {
   width: 90%;
   font-size: 60%;
   padding: 0%;
-  padding-top: 10%;
+  padding-top: 15%;
   margin: 0%;
   margin-left: 2%;
   vertical-align: bottom;
@@ -161,37 +188,40 @@ div {
 .container h3 {
   font-size: 100%;
   text-align: center;
+  margin-top: 5%;
 }
 .container a {
   text-decoration: none;
   color: #000000;  
 }
-/* .container a:hover{
-  color:#b6b6b6;
-} */
-
-.s1 {
-  background-color: rgb(36, 68, 183);
+.s1 {  
   border-radius: 10px;
   grid-area: vol;
   text-align: center;
 }
 
-.s2 {
-  background-color: rgb(37, 165, 73);
+.s2 {  
   border-radius: 10px;
   grid-area: ong;
   text-align: center;
 }
 
-.s3 {
-  background-color: rgb(232, 106, 28);
+.s3 {  
   border-radius: 10px;
   grid-area: cf;
   text-align: center;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 576px) {
+  .container {
+    grid-template-areas:
+      "cf  cf  cf  cf  cf  cf  cf  cf  cf  cf  cf  cf"
+      "vol vol vol vol vol vol vol vol vol vol vol vol"
+      "ong ong ong ong ong ong ong ong ong ong ong ong";
+  }
+}
+
+@media screen and (max-width: 768px) {
   .container {
     grid-template-areas:
       "cf  cf  cf  cf  cf  cf  cf  cf  cf  cf  cf  cf"
@@ -201,9 +231,77 @@ div {
 }
 /*<<<< grid body index*/
 
+/*body en páginas secundarias >>>>*/
+.container2 {
+  margin: 0;
+  padding: 0;
+  padding-top: 130px;  
+  height: auto;  
+  width: 100%;  
+  font-size: 100%;
+  border-radius: 15px;
+  position: relative;
+}
+.container2 div {
+  text-align: center;  
+  top: 0%;  
+  width: 100%;
+}
+.container2 h3 {
+  font-size: 100%;
+  text-align: center;  
+}
+.container2 a {
+  text-decoration:none;
+  background-color: #b6b6b6;
+  color: #000000;  
+}
+.ONG {
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 10px;
+  min-height: 500px;
+}
+.voluntarios { 
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 10px;
+    min-height: 500px;
+  }
+.funciona { 
+      border-radius: 10px;
+      text-align: center;
+      padding-top: 10px;
+      min-height: 500px;
+}
+.contacto { 
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 10px;
+  min-height: 500px;
+}
+#ct{
+  background-color: #b6b6b6;
+}
+.container2 a:hover { opacity: 70%;}
+/*<<<< body en páginas secundarias*/
 
 /*footer >>>>*/
-@media screen and (max-width: 640px) {footer {
+@media screen and (max-width: 576px) {footer {
+  background-color: black;
+  color: whitesmoke;
+  border-radius: 10px;
+  height: auto;
+  position:absolute;
+  bottom: 0;
+  left: 0%;
+  right: 0%;
+  overflow: hidden;  
+}
+
+}
+
+@media screen and (max-width: 768px) {footer {
   background-color: black;
   color: whitesmoke;
   border-radius: 10px;
@@ -217,7 +315,7 @@ div {
 }
 }
 
-footer{
+.footer{
   background-color: black;
   color: whitesmoke;
   border-radius: 10px;
@@ -227,10 +325,10 @@ footer{
   right: 0%;
   bottom: 0;
   width: 100%;
-  overflow: hidden;
+  overflow: hidden;  
 }
 
-footer div ul {
+.footer div ul {
   margin: 0;
   padding: 0;
 }
@@ -247,15 +345,15 @@ footer div ul {
   padding: 0;
 }
 
-footer a {
+.footer a {
   text-decoration: none;
   color:white;  
 }
-footer a:hover {
+.footer a:hover {
   color: #b6b6b6;
 }
 
-footer h2 {
+.footer h2 {
   position: relative;
   text-align: center;
   top: -25px;
@@ -269,11 +367,6 @@ footer h2 {
   top: 10px;
   font-size: 25px;
 }
-/* div span {
-  position: relative;
-  justify-content: center;
-  font-size: 1.2rem;
-} */
 
 .social {
   position: relative;
@@ -284,7 +377,7 @@ footer h2 {
   font-size: 25px;
 }
 
-footer div p {
+.footer div p {
   position: relative;
   text-align: center;
   top: 0px;
@@ -307,50 +400,21 @@ footer div h1 {
   left: 10%;
   font-size: 1rem;
 }
+
 /*<<<< footer*/
 
 /*form >>>>*/
-/* form {
-  
-      
-} */
-
 .col-md-4 {
   position: relative;
   left: 7%;
 }
-
-/* .card-body h5 {text-align: center;
-font-size: 25px;} */
-/*<<<< form*/
-
-
-
-/* agregado 11/10/22 */
-.divform{
-  display: flex;
-  flex-direction: column;
-  
-  
+.card-body h5 {
+  text-align: center;
+  font-size: 25px;
 }
-/* input{
-  width: 100px;
-} */
+.card-body p {
+  text-align: center;
+}
 
 
-
-
-
-/* footer >>>>*/
-/* .footer {
-  width: 100%;
-  display:flex;
-  flex-wrap: wrap;
-  justify-content:space-around;
-  background-color: black;
-  color: #f2f2f2;
-  border-radius: 10px;
-  height: 10rem;
-  font-size: 45%;  
-} */
-/*<<<< footer */
+/*<<<< form*/
