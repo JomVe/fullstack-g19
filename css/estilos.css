@@ -15,8 +15,7 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 1.7em;  
   color: #000000;
-  height: 100%;
-  
+  height: 100%;  
 }
 
 div {
@@ -70,6 +69,12 @@ div {
   flex-grow: 1;
   text-align: center;
   font-size: 60%;
+}
+#navform ul li{
+  display: flex;
+  flex-grow: 1;
+  text-align: center;
+  font-size: 100%;
 }
 .txt-nav a {
   display: block;
@@ -281,10 +286,118 @@ div {
   min-height: 500px;
 }
 #ct{
-  background-color: #b6b6b6;
+  background-color: #e9ecef;
 }
 .container2 a:hover { opacity: 70%;}
 /*<<<< body en páginas secundarias*/
+
+/*iframe >>>>*/
+iframe{
+  padding: 0% 5% 2% 5%;
+}
+#p-mapa{
+  background-color:rgb(108, 117, 125);
+  color: #b6b6b6;
+  font-size: 70%;
+  padding: 2% 2% 2% 2%;
+  border-radius: 10px;
+}
+/*<<<< iframe*/
+
+/*form organizaciones>>>>*/
+.formong{
+  padding: 130px 5% 1% 5%;
+  
+}
+.col-md-4 {
+  position: relative;
+  left: 7%;
+}
+.card-body h5 {
+  text-align: center;
+  font-size: 25px;
+}
+.card-body p {
+  text-align: center;
+}
+/*<<<< form organizaciones*/
+
+/*form de contacto >>>>*/
+.formctc{
+  text-align: center;
+}
+.formctc input{
+  background-color: #fbfbfb; 
+  width: 208px; 
+  height: 40px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: #070707; 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px;  
+}
+.formctc textarea{
+  background-color: #fbfbfb; 
+  width: 80%; 
+  height: 200px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: #070707; 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+  padding-top: 15px; 
+}
+.formctc button{
+  height: 45px; 
+  padding-left: 5px;
+  padding-right: 5px; 
+  margin-bottom: 20px; 
+  margin-top: 10px; 	
+  text-transform: uppercase;
+  background-color: #353634; 
+  border-color: #020007; 
+  border-style: solid; 
+  border-radius: 10px;	
+  width: 120px;   
+  cursor: pointer;
+  color: rgb(247, 244, 250); 
+}
+.formctc p{
+  text-align: left;
+  padding-left: 10%;
+}
+.formctc select {
+  background-color: #fbfbfb; 
+  width: 208px; 
+  height: 40px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: #070707; 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+}
+.formctc .aviso{
+  font-size: 15px;  
+  color: #0e0e0e;  
+}
+.formctc label{
+  display: block;
+  font-size: 80%;  
+  color: #030303;  
+}
+#divctc{
+  background-color:rgb(108, 117, 125);
+  color: white;
+  padding: 2% 0% 2% 0%;
+  border-radius: 10px;
+}
+/*<<<< form de contacto*/
 
 /*footer >>>>*/
 @media screen and (max-width: 576px) {footer {
@@ -298,9 +411,7 @@ div {
   right: 0%;
   overflow: hidden;  
 }
-
 }
-
 @media screen and (max-width: 768px) {footer {
   background-color: black;
   color: whitesmoke;
@@ -310,8 +421,7 @@ div {
   bottom: 0;
   left: 0%;
   right: 0%;
-  overflow: hidden;
-  
+  overflow: hidden;  
 }
 }
 
@@ -327,7 +437,6 @@ div {
   width: 100%;
   overflow: hidden;  
 }
-
 .footer div ul {
   margin: 0;
   padding: 0;
@@ -344,7 +453,6 @@ div {
   margin: 0;
   padding: 0;
 }
-
 .footer a {
   text-decoration: none;
   color:white;  
@@ -352,7 +460,6 @@ div {
 .footer a:hover {
   color: #b6b6b6;
 }
-
 .footer h2 {
   position: relative;
   text-align: center;
@@ -360,14 +467,12 @@ div {
   bottom: 5%;
   font-size: 15px;  
 }
-
 .logomini {
   position: relative;
   left: 35px;
   top: 10px;
   font-size: 25px;
 }
-
 .social {
   position: relative;
   justify-content: center;
@@ -376,7 +481,6 @@ div {
   bottom: 60px;
   font-size: 25px;
 }
-
 .footer div p {
   position: relative;
   text-align: center;
@@ -384,7 +488,6 @@ div {
   bottom: auto;
   font-size: 15px;
 }
-
 footer div i {
   position: relative;
   display: flex;
@@ -392,7 +495,6 @@ footer div i {
   justify-content: center;
   align-content: space-around;
 }
-
 footer div h1 {
   position: relative;
   top: -95px;
@@ -400,21 +502,4 @@ footer div h1 {
   left: 10%;
   font-size: 1rem;
 }
-
 /*<<<< footer*/
-
-/*form >>>>*/
-.col-md-4 {
-  position: relative;
-  left: 7%;
-}
-.card-body h5 {
-  text-align: center;
-  font-size: 25px;
-}
-.card-body p {
-  text-align: center;
-}
-
-
-/*<<<< form*/
