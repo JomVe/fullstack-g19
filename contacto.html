@@ -32,19 +32,82 @@
 
 
   <div class="container2">
-    <section class="funciona" id="ct">
-      <div>
-        <h3>Contacto</h3>
-        <p>Formulario de contacto<br>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nulla tempore odit suscipit modi, iusto aliquid reiciendis accusamus impedit ipsam odio, voluptate deserunt. Illo mollitia quos ipsum officia provident impedit?
-        </p>
+    <section class="contacto" id="ct">
+      <div id="divctc">
+        <h3>Contacto</h3><br>
+        <h6>Ante cualquier consulta no dudes en escribirnos.</h6>
+      </div><br>
+      <div>  
+        <form class="formctc" action="mailto:voluntadescompartidas@gmail.com" method="post" enctype="text/plain">
+          <p>
+            <label for="Nombre"> Nombre
+              <span class="obligatorio">*</span></label>
+            <input type="text" name="Introduzca_nombre" size="30" maxlength="50" required="obligatorio"
+              placeholder="Escribe tu nombre">
+          </p>
+          <p>
+            <label for="Apellido" class="colocar_apellido">Apellido
+              <span class="obligatorio">*</span></label>
+            <input type="text" name="Introduzca_apellido" size="30" maxlength="50" required="obligatorio"
+              placeholder="Escribe tu apellido">
+          </p>
+          <p>
+            <label for="Provincia" class="selecciona_provincia">Provincia
+              <span class="obligatorio">*</span></label>
+            <select name="provincia" required="obligatorio">
+              <option>Selecciona tu provincia</option>
+              <option>Buenos Aires</option>
+              <option>Ciudad Autónoma de Buenos Aires</option>
+              <option>Catamarca</option>
+              <option>Chaco</option>
+              <option>Chubut</option>
+              <option>Córdoba</option>
+              <option>Corrientes</option>
+              <option>Entre Ríos</option>
+              <option>Formosa</option>
+              <option>Jujuy</option>
+              <option>La Pampa</option>
+              <option>La Rioja</option>
+              <option>Mendoza</option>
+              <option>Misiones</option>
+              <option>Neuquén</option>
+              <option>Río Negro</option>
+              <option>Salta</option>
+              <option>San Juan</option>
+              <option>San Luis</option>
+              <option>Santa Cruz</option>
+              <option>Santa Fe</option>
+              <option>Santiago del Estero</option>
+              <option>Tierra del Fuego</option>
+              <option>Tucumán</option> required
+            </select>
+          </p>
+          <p>
+            <label for="Email" class="colocar_email">Email
+              <span class="obligatorio">*</span></label>
+            <input type="email" name="Introduzca_email" size="30" maxlength="50" value="@" required="obligatorio">
+          </p>
+          <p>
+            <textarea name="comentario" rows="10" cols="60">Escribe tu comentario...</textarea>
+          </p>
+  
+          <button type="submit" name="enviar_comentario" id="enviar">Enviar</button>
+          <button type="reset" name="borrar_comentario" id="borrar">Borrar</button>
+          <br> <br>
+  
+          <p class="aviso">
+            <span class="obligatorio"> * los campos son obligatorios.</span>
+          </p>
+          <br>
+        </form>
       </div>
     </section>
   </div>
-  <br>
-
-  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13644.860143261083!2d-64.2568807!3d-31.24247!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7bb683e282d47d90!2sCountry%20Las%20Corzuelas!5e0!3m2!1ses-419!2sar!4v1661357884843!5m2!1ses-419!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+  
+  <div class="container2">
+    <p id="p-mapa">Visitanos en Pje. Ron Knox 242, Trampantojo, Pcia de Bs.As.</p><br>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13644.860143261083!2d-64.2568807!3d-31.24247!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7bb683e282d47d90!2sCountry%20Las%20Corzuelas!5e0!3m2!1ses-419!2sar!4v1661357884843!5m2!1ses-419!2sar" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
 
 </body>
 
