@@ -384,7 +384,11 @@ iframe{
 }
 .formctc .aviso{
   font-size: 15px;  
-  color: #0e0e0e;  
+  width: 200px;
+  text-align: center;
+  margin: auto;
+  color: #ff0000;
+  padding-top: 20px;
 }
 .formctc label{
   display: block;
