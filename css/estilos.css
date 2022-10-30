@@ -152,14 +152,14 @@ div {
 
 
 /*Gradiente de color en las secciones del index >>>>*/
- #cf{
+#cf{
   background-image: linear-gradient(to right, #b1210b 0%, #f9d423 100%);
 }
 #vo{
   background-image: linear-gradient(to right, #21177a 0%, #2cacd1 100%);
 }
 #or{
-  background-image: linear-gradient(to right, #96cd16 0%, #00eaff 100%);
+  background-image: linear-gradient(to right, #96cd16 0%, #00eaff 100%);  
 }
 /*<<<< Gradiente de color en las secciones del index*/
 
@@ -245,7 +245,7 @@ div {
   width: 100%;  
   font-size: 100%;
   border-radius: 15px;
-  position: relative;
+  position: relative;  
 }
 .container2 div {
   text-align: center;  
@@ -258,14 +258,16 @@ div {
 }
 .container2 a {
   text-decoration:none;
-  background-color: #b6b6b6;
-  color: #000000;  
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 2% 2% 2% 2%;  
 }
 .ONG {
   border-radius: 10px;
   text-align: center;
   padding-top: 10px;
-  min-height: 500px;
+  /* min-height: 500px; */
 }
 .voluntarios { 
     border-radius: 10px;
@@ -507,3 +509,84 @@ footer div h1 {
   font-size: 1rem;
 }
 /*<<<< footer*/
+
+/*API en página "voluntarios.html" >>>>*/
+.titulo {
+  color: #2c3e50;
+  font-family: "Coda", sans-serif;
+  text-align: center;
+}
+.usuario {
+  margin: auto;
+  width: 27em; 
+  height: 11em;
+  background: #fff;
+  border-radius: .3em;
+}
+
+.usuario #fullnom {
+  margin: auto;
+  margin-top: -4.40em;
+  margin-left: 5.80em;
+  color: #16a085;
+  font-size: 1.53em;
+  font-family: "Coda", sans-serif;
+  font-weight: bold;
+}
+
+#telef {
+  margin: auto;
+  display: inline-block;
+  margin-left: 10.43em;
+  color: #3498db;
+  font-size: .87em;
+  font-family: "varela round", sans-serif;
+}
+
+.usuario > .descripcion {
+  margin: auto;
+  margin-top: 1.35em;
+  margin-right: 3em;
+  width: 18em;
+  color: #7f8c8d;
+  font-size: .87em;
+  font-family: "varela round", sans-serif;
+}
+
+.usuario > img#avatar {
+	padding: .7em;
+  margin-left: .3em;
+  margin-top: .3em;
+  height: 6.23em;
+  width: 6.23em;
+  border-radius: 18em;
+}
+
+
+.boton {
+  margin: 2em auto;
+  height: 3.70em;
+  background: #16a085;
+  text-align: center;
+  border-radius: 0 0 .3em .3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.1s;
+}
+
+.boton button {
+  color: white;
+  font-family: "Coda", sans-serif;
+  text-align: center;
+  font-size: 20px;
+  background: none;
+  outline: none;
+  border: 0;
+}
+
+.boton:hover {
+  background: #1abc9c;
+}
+
+/*<<<< API en página "voluntarios.html"*/
