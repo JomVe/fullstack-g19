@@ -139,7 +139,7 @@ div {
   width: 90%;
   font-size: 60%;
   padding: 0%;
-  padding-top: 15%;
+  padding-top: 12%;
   margin: 0%;
   margin-left: 2%;
   vertical-align: bottom;
@@ -186,7 +186,7 @@ div {
 .container div {
   text-align: center;
   position: relative;
-  top: 20%;
+  top: 10%;
   transform: translateY(-50%);
 }
 
