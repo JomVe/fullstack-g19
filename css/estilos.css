@@ -248,7 +248,9 @@ div {
   position: relative;  
 }
 .container2 div {
-  text-align: center;  
+  text-align:justify;
+  font-size: 80%;
+  padding: 1% 1% 1% 1%;
   top: 0%;  
   width: 100%;
 }
@@ -263,11 +265,14 @@ div {
   border-radius: 10px;
   padding: 2% 2% 2% 2%;  
 }
+.container2 ul {
+  text-align: left; 
+}
 .ONG {
   border-radius: 10px;
   text-align: center;
   padding-top: 10px;
-  /* min-height: 500px; */
+  min-height: 500px;
 }
 .voluntarios { 
     border-radius: 10px;
